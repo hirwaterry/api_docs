@@ -1,6 +1,6 @@
 # 📌 API Documentation
 
-![API Banner](https://via.placeholder.com/1200x400?text=API+Documentation)
+![API Banner]([https://via.placeholder.com/1200x400?text=API+Documentation](https://www.shutterstock.com/image-photo/female-hands-laptop-virtual-screen-600nw-2400645485.jpg))
 
 ![GitHub License](https://img.shields.io/github/license/hirwaterry/repository-name?style=for-the-badge)
 ![GitHub Issues](https://img.shields.io/github/issues/hirwaterry/repository-name?style=for-the-badge)
