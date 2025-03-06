@@ -6,6 +6,8 @@ import {
   FaTimes,  // Close menu
   FaChevronDown  // Dropdown arrow
 } from 'react-icons/fa';
+
+import { GiDoctorFace } from "react-icons/gi";
 import { NAV_LINKS, LANGUAGE_OPTIONS } from '../constants';
 
 const Navbar = () => {
@@ -17,7 +19,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0 text-3xl font-bold text-white"> 
+            <Link href="/" className="flex-shrink-0 text-3xl  font-bold text-gray-900"> 
+              
               BODX 
             </Link>
           </div>
@@ -29,7 +32,7 @@ const Navbar = () => {
                 <Link 
                   key={link.href}
                   href={link.href} 
-                  className="text-gray-100 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   {link.name}
                 </Link>
@@ -40,14 +43,14 @@ const Navbar = () => {
           {/* Language Selector */}
           <div className="hidden md:flex items-center space-x-4">
             <div className="relative">
-              <select className="appearance-none bg-transparent text-sm text-gray-100 pr-6 focus:outline-none">
+              <select className="appearance-none bg-transparent text-sm text-gray-800 pr-6 focus:outline-none">
                 {LANGUAGE_OPTIONS.map((lang) => (
                   <option key={lang.code} value={lang.code}>
                     {lang.name}
                   </option>
                 ))}
               </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-100">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-800">
                 <FaChevronDown className="h-4 w-4" />
               </div>
             </div>
@@ -81,14 +84,14 @@ const Navbar = () => {
               <Link 
                 key={link.href}
                 href={link.href} 
-                className="text-gray-100 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-800 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
               >
                 {link.name}
               </Link>
             ))}
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-5">
-                <select className="w-full bg-white text-sm text-gray-100 p-2 rounded-md focus:outline-none">
+                <select className="w-full bg-white text-sm text-gray-800 p-2 rounded-md focus:outline-none">
                   {LANGUAGE_OPTIONS.map((lang) => (
                     <option key={lang.code} value={lang.code}>
                       {lang.name}
