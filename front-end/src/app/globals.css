@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     cursor: url('/my-cursor.cur'), auto ; /* Fallback to 'auto' if the custom cursor fails */
-    
+   
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

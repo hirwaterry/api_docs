@@ -30,10 +30,10 @@ const Hero: React.FC = () => {
         {/* SVG as Image */}
         <Image
 
-          src="/Hero1.svg"
+          src="/screen-bg.png"
           alt="Hero SVG"
-          width={600}
-          height={400}
+          width={1000}
+          height={800}
           layout="intrinsic"
           className="object-contain "
         />

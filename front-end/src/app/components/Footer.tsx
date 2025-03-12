@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         {/* Logo and Hashtag */}
         <div className="text-center h-40 items-center mb-8">
           {/* <Image src="/spylt-logo.png" alt="bodx Logo" width={100} height={50} className="mx-auto" /> Replace with your logo path and dimensions */}
-          <h1 className="text-4xl font-bold pt-20">#BODX</h1>
+          <h1 className="text-4xl font-bold pt-20 bebas ">#BODX</h1>
         </div>
 
         {/* Social Icons */}
@@ -54,6 +54,9 @@ const Footer: React.FC = () => {
               </button>
             </div>
           </div>
+        </div>
+        <div>
+          <h1 className="text-[200px] font-bold pt-20 bebas uppercase ">#BODX on the top wlh!</h1>
         </div>
       </div>
 
