@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { GiDoctorFace } from "react-icons/gi";
 import { NAV_LINKS, LANGUAGE_OPTIONS } from '../constants';
@@ -9,9 +9,19 @@ import { BoldIcon } from '@heroicons/react/16/solid';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isscrolled, setIsscrolled] = useState(false)
+
+
+  useEffect(()=>{
+    if(window.scrollY > 10) {
+      setIsscrolled(true)
+    }else{
+      setIsscrolled(false)
+    }
+  },[])
 
   return (
-    <nav className="fixed top-0 pt-4 left-0 w-full z-50 bg-transparent">
+    <nav className={`${isscrolled ? 'fixed top-0 py-5 left-0 w-full z-50 bg-transparent transition-all duration-300' : 'fixed top-0 py-5 left-0 w-full z-50 backdrop-blur-md transition-all duration-300'}`}>
       <div className="max-w-7xl max-sm:px-2 mx-auto ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
