@@ -20,3 +20,23 @@ body {
     font-style: normal;
   }
   
+
+  /* BODX Scroll efect in footer */
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 15s linear infinite; /* Adjust timing as needed */
+  }
+  
+  .bebas {
+    font-family: 'Bebas Neue', sans-serif; /* If you need Bebas Neue */
+  }
+
+  

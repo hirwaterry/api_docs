@@ -55,9 +55,14 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h1 className="text-[200px] font-bold pt-20 bebas uppercase ">#BODX on the top wlh!</h1>
-        </div>
+        <div className="relative w-full overflow-hidden">
+      <div className="animate-marquee whitespace-nowrap">
+        <h1 className="text-[200px] font-bold pt-20 bebas uppercase">
+          #BODX on the top wlh!
+        </h1>
+      </div>
+      
+    </div>
       </div>
 
       {/* Copyright and Legal */}
