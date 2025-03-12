@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { GiDoctorFace } from "react-icons/gi";
 import { NAV_LINKS, LANGUAGE_OPTIONS } from '../constants';
+import { ArrowDown01Icon, ArrowDown02Icon, ArrowDown03Icon } from 'hugeicons-react';
+import { BoldIcon } from '@heroicons/react/16/solid';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +48,7 @@ const Navbar = () => {
                 ))}
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-800">
-                <FaChevronDown className="h-4 w-4" />
+                <ArrowDown01Icon className="font-semibold h-4 w-4" />
               </div>
             </div>
           </div>
