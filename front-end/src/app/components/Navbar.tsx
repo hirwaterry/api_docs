@@ -1,12 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { useState } from 'react';
-import { 
-  FaBars,  // Hamburger menu
-  FaTimes,  // Close menu
-  FaChevronDown  // Dropdown arrow
-} from 'react-icons/fa';
-
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { GiDoctorFace } from "react-icons/gi";
 import { NAV_LINKS, LANGUAGE_OPTIONS } from '../constants';
 
@@ -15,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 pt-4 left-0 w-full z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl max-sm:px-2 mx-auto ">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
@@ -42,7 +37,7 @@ const Navbar = () => {
 
           {/* Language Selector */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="relative">
+            <div className="relative bg-gray-300 p-3 rounded-xl">
               <select className="appearance-none bg-transparent text-sm text-gray-800 pr-6 focus:outline-none">
                 {LANGUAGE_OPTIONS.map((lang) => (
                   <option key={lang.code} value={lang.code}>
@@ -89,6 +84,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+            
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-5">
                 <select className="w-full bg-white text-sm text-gray-800 p-2 rounded-md focus:outline-none">

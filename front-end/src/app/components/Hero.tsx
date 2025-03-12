@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-[#ffff] px-20 pt-32 lg:pt-0 h-screen flex flex-col lg:flex-row items-center justify-between">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
+    <div className="bg-[#ffff] container mx-auto px-20 pt-32  lg:pt-0 h-screen flex flex-col lg:flex-row items-center">
+      <div className="max-w-xl mx-auto px-4  sm:px-6 lg:px-8  text-center lg:text-left">
         <h1 className="text-4xl sm:text-6xl  font-bold text-gray-900 mb-6">
           Put people first
         </h1>
@@ -26,15 +26,16 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 lg:mt-0">
+      <div className=" w-full flex justify-center lg:justify-end items-center mt-8 lg:mt-0">
         {/* SVG as Image */}
         <Image
+
           src="/Hero1.svg"
           alt="Hero SVG"
           width={600}
           height={400}
           layout="intrinsic"
-          className="object-contain"
+          className="object-contain "
         />
       </div>
     </div>

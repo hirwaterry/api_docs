@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    cursor: url('/my-cursor.cur'), auto ; /* Fallback to 'auto' if the custom cursor fails */
+    
+  }
