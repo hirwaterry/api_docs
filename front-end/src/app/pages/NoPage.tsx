@@ -3,15 +3,19 @@ import FuzzyText from '@/app/components/Fuzz';
 const NotFoundPage = () => {
     return (
       <div className="flex justify-center items-center h-screen bg-black text-white">
-        <FuzzyText baseIntensity={0.2} hoverIntensity={1} enableHover={true} className="text-6xl font-bold">
-          404
-        </FuzzyText>
+        <span className="text-6xl font-bold">
+          <FuzzyText baseIntensity={0.2} hoverIntensity={1} enableHover={true}>
+            404
+          </FuzzyText>
+        </span>
         
-        <FuzzyText baseIntensity={0.1} hoverIntensity={0.8} enableHover={true} className="text-3xl font-semibold">
-          not found
-        </FuzzyText>
+        <span className="text-3xl font-semibold">
+          <FuzzyText baseIntensity={0.1} hoverIntensity={0.8} enableHover={true}>
+            not found
+          </FuzzyText>
+        </span>
       </div>
     );
-  };
-  
-  export default NotFoundPage;
+};
+
+export default NotFoundPage;
