@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'; // Import Image for logo
 import { FaYoutube, FaInstagram, FaTiktok } from 'react-icons/fa'; // Import social icons
+import MyComponent from './Isnt';
 
 const Footer: React.FC = () => {
   return (
@@ -56,11 +57,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="relative w-full overflow-hidden">
-      <div className="animate-marquee whitespace-nowrap">
-        <h1 className="text-[200px] font-bold pt-20 bebas uppercase">
-          #BODX on the top wlh!
-        </h1>
-      </div>
+      
+      <MyComponent />
       
     </div>
       </div>

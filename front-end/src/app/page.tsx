@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import NotFoundPage from "./pages/NoPage";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ export default function Home() {
       <div className={loading ? "hidden" : ""}>
         <Navbar />
         <Hero />
+        <NotFoundPage />
         <Footer />
       </div>
     </>
