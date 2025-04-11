@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
-import NotFoundPage from "./pages/NoPage";
+import NotFoundPage from "./pages/404";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
