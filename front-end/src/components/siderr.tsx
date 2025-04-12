@@ -95,14 +95,15 @@ const DocsSidebar = () => {
     <SidebarProvider>
       <Sidebar
         className="
-          mx-40
-          bg-white
-          min-h-screen
+          bg-transparent
+          absolute
+          left-0
+          h-full
         "
       >
         <SidebarContent className="p-2">
           <SidebarGroup>
-            <SidebarGroupLabel className="text-lg font-semibold text-gray-800">
+            <SidebarGroupLabel className="text-lg font-semibold mb-5 text-gray-800">
               Express.js API Docs
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -120,6 +121,7 @@ const DocsSidebar = () => {
                           items-center
                           justify-between
                           w-full
+                          font-semibold
                           text-gray-700
                           hover:bg-indigo-100
                           hover:text-indigo-800
