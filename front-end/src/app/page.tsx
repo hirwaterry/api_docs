@@ -1,9 +1,9 @@
 "use client"
 import { useState, useEffect } from 'react';
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Loader from "./components/Loader";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Loader from "../components/Loader";
 import NotFoundPage from "./pages/404";
 import CodeBlockDemo from '@/components/Code';
 

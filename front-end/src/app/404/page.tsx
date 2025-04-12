@@ -1,4 +1,4 @@
-import FuzzyText from '@/app/components/Fuzz';
+import FuzzyText from '@/components/Fuzz';
 
 const NotFoundPage = () => {
     return (

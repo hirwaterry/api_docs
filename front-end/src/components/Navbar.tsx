@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { GiDoctorFace } from "react-icons/gi";
-import { NAV_LINKS, LANGUAGE_OPTIONS } from '../constants';
+import { NAV_LINKS, LANGUAGE_OPTIONS } from '../app/constants';
 import { ArrowDown01Icon, ArrowDown02Icon, ArrowDown03Icon } from 'hugeicons-react';
 import { BoldIcon } from '@heroicons/react/16/solid';
 
