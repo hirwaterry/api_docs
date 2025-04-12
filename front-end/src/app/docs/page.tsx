@@ -2,6 +2,7 @@
 import React from "react";
 import DocsSidebar from "../../components/siderr"; // Your custom DocsSidebar
 import CodeBlockDemo from "@/components/Code";
+import Docbar from "@/components/docBar";
 
 // Mock BreadcrumbWithDropdown (replace with your actual implementation)
 const BreadcrumbWithDropdown = () => (
@@ -31,8 +32,8 @@ const BreadcrumbWithDropdown = () => (
 const Page = () => {
   return (
     <div className="bg-gray-50">
-      <div className="w-full m-auto h-20 bg-black justify-center">
-        {/* Navbar goes here  */}
+      <div className="w-full m-auto h-20  justify-center">
+        <Docbar />
       </div>
       <div className="flex justify-center w-full min-h-screen">
         <div
@@ -58,17 +59,21 @@ const Page = () => {
                 Codes Component
               </h1>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                The Express.js framework is a powerful tool for building web applications and APIs. It simplifies the process of handling HTTP requests, routing, and middleware integration, allowing developers to create robust server-side applications with ease.
+                The Express.js framework is a powerful tool for building web
+                applications and APIs. It simplifies the process of handling
+                HTTP requests, routing, and middleware integration, allowing
+                developers to create robust server-side applications with ease.
               </p>
               <div className="bg-gray-50 rounded-lg border border-gray-100 mb-8">
                 <h2 className="text-xl font-semibold text-gray-800 my-4">
                   Example
                 </h2>
-                <CodeBlockDemo/>
-                
+                <CodeBlockDemo />
               </div>
               <div className="prose prose-gray max-w-none">
-                <h2 className="text-xl font-semibold text-gray-800 mb-4">Props</h2>
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  Props
+                </h2>
                 <table className="w-full text-left border border-gray-200 rounded-lg">
                   <thead>
                     <tr className="bg-gray-100">

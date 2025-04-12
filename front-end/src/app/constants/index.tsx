@@ -5,16 +5,16 @@ export const NAV_LINKS = [
       href: '/project'
     },
     {
-      name: 'Why us',
-      href: '/why-us'
+      name: 'Docs',
+      href: '/docs'
     },
     {
       name: 'About us',
       href: '/about-us'
     },
     {
-      name: 'Cases',
-      href: '/cases'
+      name: 'Why us',
+      href: '/why'
     },
     {
       name: 'Blog',

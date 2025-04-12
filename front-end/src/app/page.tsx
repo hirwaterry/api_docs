@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import NotFoundPage from "./pages/404";
 import CodeBlockDemo from '@/components/Code';
+import DocNav from '@/components/docNav';
+
 
 
 export default function Home() {
@@ -27,7 +29,7 @@ export default function Home() {
       
       {/* Show main content when loading is complete */}
       <div className={loading ? "hidden" : ""}>
-        <Navbar />
+        <Navbar /> 
         <Hero />
         <CodeBlockDemo />
         <NotFoundPage />
