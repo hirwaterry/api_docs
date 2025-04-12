@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import NotFoundPage from "./pages/404";
+import CodeBlockDemo from '@/components/Code';
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,9 +29,14 @@ export default function Home() {
       <div className={loading ? "hidden" : ""}>
         <Navbar />
         <Hero />
+        <CodeBlockDemo />
         <NotFoundPage />
         <Footer />
       </div>
     </>
   );
 }
+
+
+
+
