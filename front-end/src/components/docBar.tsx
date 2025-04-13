@@ -38,39 +38,38 @@ const DocBar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial scroll position
-
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`${isscrolled ? 'fixed top-0 py-3 left-0 w-full z-50 bg-gray-50  transition-all duration-300' : 'fixed top-0 py-3 left-0 w-full z-50 bg-gray-50 transition-all duration-300'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`${isscrolled ? 'fixed border top-0 py-3 left-0 w-full z-50 bg-gray-50  transition-all duration-300' : 'fixed border top-0 py-3 left-0 w-full z-50 bg-gray-50 transition-all duration-300'}`}>
+      <div className=" md:container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-             
-              <span className="text-black font-bold text-xl">Bodx</span>
-            </Link>
-          </div>
+          <div className="flex space-x-[180px] items-center">
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
-              {NAV_LINKS.map((link) => (
-                <Link 
-                  key={link.href}
-                  href={link.href} 
-                  className="text-gray-900 hover:text-gray-500 px-3 py-2 text-sm font-medium"
-                >
-                  {link.name}
-                </Link>
-              ))}
+            <Link href="/" className="flex items-center space-x-2">
+              <span className="text-black font-bold text-xl">BoDx</span>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:block">
+              <div className="flex items-baseline space-x-2">
+                {NAV_LINKS.map((link) => (
+                  <Link 
+                    key={link.href}
+                    href={link.href} 
+                    className="text-gray-900 hover:text-gray-500 px-3 py-2 text-sm font-medium"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
+
 
           {/* Right side - Social links and Search */}
           <div className="hidden md:flex items-center space-x-4">
@@ -94,7 +93,7 @@ const DocBar = () => {
             
             {/* Search */}
             <div className="relative">
-              <div className="flex items-center bg-gray-900 rounded-md px-3 py-1.5 border border-gray-700">
+              <div className="flex items-center bg-gray-900 rounded-2xl px-3 py-3 border border-gray-700">
                 <Search className="h-4 w-4 text-gray-400 mr-2" />
                 <input 
                   type="text" 
