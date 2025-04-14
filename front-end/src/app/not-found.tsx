@@ -1,6 +1,6 @@
 import FuzzyText from '@/components/Fuzz';
 
-const NotFoundPage = () => {
+const NotFound = () => {
     return (
       <div className="flex justify-center items-center h-screen bg-black text-white">
         <span className="text-6xl font-bold">
@@ -18,4 +18,4 @@ const NotFoundPage = () => {
     );
 };
 
-export default NotFoundPage;
+export default NotFound;
